@@ -9,9 +9,10 @@ public class Book {
 	private String author;
 	private double price;
 	private String publisher;
-	private boolean isForeign;	
+	private boolean isForeign;
 	private int count;
 	
+
 	public Book(String title, String author, double price, String publisher, boolean isForeign, int count) {
 		this.title = title;
 		this.author = author;
@@ -19,72 +20,71 @@ public class Book {
 		this.publisher = publisher;
 		this.isForeign = isForeign;
 		this.count = count;
-		
 	}
-	
+
 	public Book() {
-		
+
 	}
+
 	public String getTitle() {
-			return title;
-			
+		return title;
 	}
+
 	public void setTitle(String title) {
-	      this.title = title;
-	      
+		this.title = title;
 	}
+
 	public String getAuthor() {
 		return author;
-		
 	}
-	public void setAuthor() {
+
+	public void setAuthor(String author) {
 		this.author = author;
-		
 	}
+
 	public double getPrice() {
 		return price;
-		
 	}
-	public void setPrice() {
+
+	public void setPrice(double price) {
 		this.price = price;
-		
 	}
+
 	public String getPublisher() {
 		return publisher;
-		
 	}
-	public void setPublisher() {
+
+	public void setPublisher(String publisher) {
 		this.publisher = publisher;
 	}
-	
+
 	public boolean isForeign() {
 		return isForeign;
 	}
-	public void setForeign() {
+
+	public void setForeign(boolean isForeign) {
 		this.isForeign = isForeign;
-		
 	}
-	public int count() {
+
+	public int getCount() {
 		return count;
 	}
-	public void setCount() {
+
+	public void setCount(int count) {
 		this.count = count;
-		
 	}
+	
 	public UUID getId() {
 		return id;
 	}
-	public void setId() {
+	
+	public void setId(UUID id) {
 		this.id = id;
-		
 	}
+
 	@Override
 	public String toString() {
-		return "ID:  " + id + "\nTitle:  " + title + "\nAuthor:  " + author + "\nPrice: "
-	+ price + "\nPublisher:  " + publisher  + "\nForeign?:  " + isForeign + "\nCount: "  + count + "\n\n"; 
-				
+		return "ID: "+id+"\nTitle: " + title + "\nAuthor: " + author + "\nPrice: " + price + "\nPublisher: " + publisher
+				+ "\nForeign?: " + isForeign + "\nCount: " + count+"\n\n";
 	}
-	
-	
-
 }
