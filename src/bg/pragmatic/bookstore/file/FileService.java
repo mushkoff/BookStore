@@ -14,6 +14,7 @@ public class FileService {
 	private static File file = new File("./resources/bookstore.txt");
 
 	public static void writeInFile(List<Book> books) {
+		
 		// crawls the book list and add each new book in the file
 
 		try {
