@@ -14,12 +14,11 @@ public class FileService {
 private static File file = new File("./resources/bookstore.txt");
 
 	public static void writeInFile(List<Book> books) {
-<<<<<<< HEAD
-=======
+
 		
-		//testing push
-		///obhojda lista books i zapisva vsyaka kniga vuv faila posledvan ot nov red 
->>>>>>> fe04dd0b41fe9621bcedfdf0f55bea43eaec8272
+		
+		//crawls the book list and add each new book in the file
+
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(file,true));
 			for (Book book : books) {
