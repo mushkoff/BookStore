@@ -1,6 +1,6 @@
 package bg.pragmatic.bookstore.file;
 
-import java.io.BufferedWriter;
+import java.io.BufferedWriter; 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -14,6 +14,12 @@ public class FileService {
 private static File file = new File("./resources/bookstore.txt");
 
 	public static void writeInFile(List<Book> books) {
+<<<<<<< HEAD
+=======
+		
+		//testing push
+		///obhojda lista books i zapisva vsyaka kniga vuv faila posledvan ot nov red 
+>>>>>>> fe04dd0b41fe9621bcedfdf0f55bea43eaec8272
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(file,true));
 			for (Book book : books) {
